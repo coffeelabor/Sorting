@@ -3,6 +3,7 @@ def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
     # TO-DO
+    # print('elements', elements)
     
     return merged_arr
 
@@ -31,3 +32,15 @@ def merge_sort_in_place(arr, l, r):
 def timsort( arr ):
 
     return arr
+
+'''
+for i in range(0, elements):
+        if len(arrA) == 0:
+            merged_arr[i] = arrB.pop(0)
+        elif len(arrB) == 0:
+            merged_arr[i] = arrA.pop(0)
+        elif arrA[0] < arrB[0]:
+            merged_arr[i] = arrA.pop(0)
+        else: merged_arr[i] = arrB.pop(0)
+    print('merged_arr', merged_arr)
+'''
